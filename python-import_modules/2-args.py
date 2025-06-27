@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+"""Script to display command line arguments with count."""
 from sys import argv
+
 
 if __name__ == "__main__":
     num_args = len(argv) - 1
