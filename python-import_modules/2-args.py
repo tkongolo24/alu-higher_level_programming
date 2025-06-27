@@ -1,16 +1,20 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 import sys
 
-if __name__ == '__main__':
-    args = sys.argv[1:]
-    num_args = len(args)
-    if num_args == 0:
+if __name__ == "__main__":
+    # Get command line arguments (excluding the script name)
+    argv = sys.argv[1:]
+    argc = len(argv)
+    
+    # Print number of arguments with proper grammar
+    if argc == 0:
         print("0 arguments.")
-    elif num_args == 1:
+    elif argc == 1:
         print("1 argument:")
-        print("1: " + args[0])
     else:
-        print("{} arguments:".format(num_args))
-        for i in range(len(args)):
-            print("{}: {}".format(i+1, args[i]))
+        print(f"{argc} arguments:")
+    
+    # Print each argument with its position
+    for i in range(argc):
+        print(f"{i + 1}: {argv[i]}")
