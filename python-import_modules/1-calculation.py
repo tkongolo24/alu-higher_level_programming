@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 
-from calculator_1 import add, sub, mul, div
-
-
 def add(a, b):
     return a + b
 
@@ -18,6 +15,8 @@ def multiply(a, b):
 def divide(a, b):
     return a / b
 
+
+from calculator_1 import add, sub, mul, div
 
 a = 10
 b = 5
